@@ -1,4 +1,4 @@
-<div class="card">
+<div class="card fixed top-0 w-full">
   <p-menubar [model]="items">
     <ng-template pTemplate="end">
       <input
@@ -6,6 +6,8 @@
         pInputText
         placeholder="Buscar"
         class="w-full h-2rem"
+        #inputBuscar
+        (keyup.enter)="busquedaPrecisa(inputBuscar.value)"
       />
     </ng-template>
   </p-menubar>

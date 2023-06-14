@@ -1,0 +1,42 @@
+<div class="grid my-8">
+  <div class="col-offset-1">
+    <img [src]="juego.background_image" style="max-width: 90%;" />
+    <div class="card flex align-items-center gap-2 flex-wrap">
+      <h3>Etiquetas</h3>
+      <p-chip *ngFor="let tag of juego.tags" [label]="tag.name"></p-chip>
+    </div>
+    <div class="col-12">
+      <span class="text-500 text-lg">Nombre completo:</span> {{ juego.name }}
+    </div>
+    <div class="col-12">
+      <span class="text-500 text-lg">Calificacion media:</span>
+      {{ juego.rating }}
+    </div>
+    <div class="col-12 flex flex-column gap-4">
+      <span class="text-500 text-lg"
+        >Deja tu comentario si has jugado {{ juego.name }}:</span
+      >
+      <textarea
+        name="comentario"
+        id=""
+        cols="30"
+        rows="10"
+        class="p-2"
+        style="
+          font-size: large;
+          min-width: 550px;
+          max-width: 750px;
+          max-height: 15rem;
+          min-height: 10rem;
+        "
+      ></textarea>
+      <button
+        pButton
+        label="Enviar"
+        class="p-button-success w-1"
+        icon="pi pi-check"
+        iconPos="right"
+      ></button>
+    </div>
+  </div>
+</div>
