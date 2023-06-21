@@ -1,4 +1,4 @@
-<div class="grid mb-4">
+<div class="grid mb-4 animation">
   <div class="col-6">
     <div
       class="flex flex-column align-items-center justify-content-center"
@@ -15,7 +15,9 @@
     <div class="flex flex-row mt-8">
       <div class="col-6 flex flex-column align-items-center">
         <h1>ENCUENTRA</h1>
-        <h3 class="text-center">Tu proximo juego basado en la experiencia de otros jugadores</h3>
+        <h3 class="text-center">
+          Tu proximo juego basado en la experiencia de otros jugadores
+        </h3>
       </div>
       <div class="ml-4 col-6">
         <img
@@ -27,10 +29,10 @@
     </div>
     <div class="flex flex-row mt-8">
       <div class="col-6 flex flex-column align-items-center">
-        <h1>COMPARTE</h1>
+        <h1>VALORA</h1>
         <h3 class="text-center">
-          Tus experiencias y ayuda a que otros jugadores se decidan a jugar ese
-          juego que te sorprendio
+          Tu opinion ayuda a la comunidad gamer a escoger aquellos juegos que si
+          valen la pena
         </h3>
       </div>
       <div class="ml-4 col-6">
@@ -43,8 +45,11 @@
     </div>
     <div class="flex flex-row mt-8">
       <div class="col-6 flex flex-column align-items-center">
-        <h1>ENCUENTRA</h1>
-        <h3 class="text-center">Tu proximo juego basado en la experiencia de otros jugadores</h3>
+        <h1>RECOMIENDA</h1>
+        <h3 class="text-center">
+          Tus experiencias y ayuda a que otros jugadores se decidan a jugar ese
+          juego que te sorprendio
+        </h3>
       </div>
       <div class="ml-4 col-6">
         <img
@@ -63,62 +68,85 @@
 >
   <h1>ULTIMAS RESEÑAS</h1>
 </div>
-
-<div class="grid my-8">
-  <div class="col-offset-1 flex flex-row flex-wrap gap-8">
-    <!-- TODO: Hacer que estas 3 la informacion de estas 3 cartas
+<div pDefer>
+  <ng-template>
+    <div class="grid my-8">
+      <div class="col-offset-1 flex flex-row flex-wrap gap-8">
+        <!-- TODO: Hacer que estas 3 la informacion de estas 3 cartas
     Vengan de una consulta a la base de datos... -->
-    <div class="card flex justify-content-center">
-        <p-card header="Titulo del Juego" subheader="Valoracion General (0-10)" [style]="{ width: '360px' }">
+        <div class="card flex justify-content-center fadein animation-duration-1000">
+          <p-card
+            header="Titulo del Juego"
+            subheader="Valoracion General (0-10)"
+            [style]="{ width: '360px' }"
+          >
             <ng-template pTemplate="header">
-                <img alt="Card" src="https://wallpapers.com/images/high/forza-motorsport-ihs986byem2r1j0s.webp" />
+              <img
+                alt="Card"
+                src="https://wallpapers.com/images/high/forza-motorsport-ihs986byem2r1j0s.webp"
+              />
             </ng-template>
-            <p>
-                Aqui va el ultimo comentario sobre el juego...
-            </p>
+            <p>Aqui va el ultimo comentario sobre el juego...</p>
             <ng-template pTemplate="footer">
-                <p>Aqui podria ir las consolas en las que esta disponible...</p>
+              <p>Aqui podria ir las consolas en las que esta disponible...</p>
             </ng-template>
-        </p-card>
-    </div>
-    <div class="card flex justify-content-center">
-        <p-card header="Titulo del Juego" subheader="Valoracion General (0-10)" [style]="{ width: '360px' }">
+          </p-card>
+        </div>
+        <div class="card flex justify-content-center fadein animation-duration-1000">
+          <p-card
+            header="Titulo del Juego"
+            subheader="Valoracion General (0-10)"
+            [style]="{ width: '360px' }"
+          >
             <ng-template pTemplate="header">
-                <img alt="Card" src="https://wallpapers.com/images/high/forza-motorsport-ihs986byem2r1j0s.webp" />
+              <img
+                alt="Card"
+                src="https://wallpapers.com/images/high/forza-motorsport-ihs986byem2r1j0s.webp"
+              />
             </ng-template>
-            <p>
-                Aqui va el ultimo comentario sobre el juego...
-            </p>
+            <p>Aqui va el ultimo comentario sobre el juego...</p>
             <ng-template pTemplate="footer">
-                <p>Aqui podria ir las consolas en las que esta disponible...</p>
+              <p>Aqui podria ir las consolas en las que esta disponible...</p>
             </ng-template>
-        </p-card>
-    </div>
-    <div class="card flex justify-content-center">
-        <p-card header="Titulo del Juego" subheader="Valoracion General (0-10)" [style]="{ width: '360px' }">
+          </p-card>
+        </div>
+        <div class="card flex justify-content-center fadein animation-duration-1000">
+          <p-card
+            header="Titulo del Juego"
+            subheader="Valoracion General (0-10)"
+            [style]="{ width: '360px' }"
+          >
             <ng-template pTemplate="header">
-                <img alt="Card" src="https://wallpapers.com/images/high/forza-motorsport-ihs986byem2r1j0s.webp" />
+              <img
+                alt="Card"
+                src="https://wallpapers.com/images/high/forza-motorsport-ihs986byem2r1j0s.webp"
+              />
             </ng-template>
-            <p>
-                Aqui va el ultimo comentario sobre el juego...
-            </p>
+            <p>Aqui va el ultimo comentario sobre el juego...</p>
             <ng-template pTemplate="footer">
-                <p>Aqui podria ir las consolas en las que esta disponible...</p>
+              <p>Aqui podria ir las consolas en las que esta disponible...</p>
             </ng-template>
-        </p-card>
-    </div>
-    <div class="card flex justify-content-center">
-        <p-card header="Titulo del Juego" subheader="Valoracion General (0-10)" [style]="{ width: '360px' }">
+          </p-card>
+        </div>
+        <div class="card flex justify-content-center fadein animation-duration-1000">
+          <p-card
+            header="Titulo del Juego"
+            subheader="Valoracion General (0-10)"
+            [style]="{ width: '360px' }"
+          >
             <ng-template pTemplate="header">
-                <img alt="Card" src="https://wallpapers.com/images/high/forza-motorsport-ihs986byem2r1j0s.webp" />
+              <img
+                alt="Card"
+                src="https://wallpapers.com/images/high/forza-motorsport-ihs986byem2r1j0s.webp"
+              />
             </ng-template>
-            <p>
-                Aqui va el ultimo comentario sobre el juego...
-            </p>
+            <p>Aqui va el ultimo comentario sobre el juego...</p>
             <ng-template pTemplate="footer">
-                <p>Aqui podria ir las consolas en las que esta disponible...</p>
+              <p>Aqui podria ir las consolas en las que esta disponible...</p>
             </ng-template>
-        </p-card>
+          </p-card>
+        </div>
+      </div>
     </div>
-  </div>
+  </ng-template>
 </div>

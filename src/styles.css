@@ -3,4 +3,18 @@
 
 body {
     font-family: var(--font-family);
+    display: flex;
+    flex-direction: column;
+}
+
+html, body {
+    height: 100%;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex-shrink: 0;
 }

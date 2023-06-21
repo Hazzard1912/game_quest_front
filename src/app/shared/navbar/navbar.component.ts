@@ -94,18 +94,6 @@ export class NavbarComponent implements OnInit {
           },
         ],
       },
-      {
-        label: 'Registrarse',
-        icon: 'pi pi-fw pi-user-plus',
-      },
-      {
-        label: 'Loguearse',
-        icon: 'pi pi-fw pi-sign-in',
-      },
-      {
-        label: 'Salir',
-        icon: 'pi pi-fw pi-power-off',
-      },
     ];
   }
   consulta(consulta: string) {

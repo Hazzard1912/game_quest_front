@@ -5,11 +5,14 @@ import { ApiService } from 'src/app/services/api.service';
 import { map } from 'rxjs';
 import { Result } from 'src/app/interfaces/interface';
 import { Router } from '@angular/router';
+import { DeferModule } from "primeng/defer";
+import { AnimateModule } from "primeng/animate";
+
 
 @Component({
   selector: 'app-mejores-valorados',
   standalone: true,
-  imports: [CommonModule, CardModule],
+  imports: [CommonModule, CardModule, DeferModule, AnimateModule],
   templateUrl: './mejores-valorados.component.html',
   styleUrls: ['./mejores-valorados.component.css'],
 })

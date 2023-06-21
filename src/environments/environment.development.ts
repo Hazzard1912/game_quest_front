@@ -1,5 +1,5 @@
 export const environment = {
   production: false,
-  key: '67d734fd8f804011919f75d21d82b060',
+  key: '739e81988ed444328449ce301f4f52cf',
   baseUrl: 'https://api.rawg.io/api',
 };

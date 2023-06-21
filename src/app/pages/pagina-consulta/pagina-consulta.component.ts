@@ -4,11 +4,15 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { ApiService } from 'src/app/services/api.service';
 import { Result } from 'src/app/interfaces/detalle.interface';
 import { CardModule } from 'primeng/card';
+import { DeferModule } from "primeng/defer";
+import { AnimateModule } from "primeng/animate";
+
+
 
 @Component({
   selector: 'app-pagina-consulta',
   standalone: true,
-  imports: [CommonModule, CardModule],
+  imports: [CommonModule, CardModule, DeferModule, AnimateModule],
   templateUrl: './pagina-consulta.component.html',
   styleUrls: ['./pagina-consulta.component.css'],
 })

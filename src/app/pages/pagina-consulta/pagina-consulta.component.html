@@ -3,32 +3,38 @@
     *ngFor="let resultado of resultados"
     class="col-offset-1 flex flex-row flex-wrap"
   >
-    <div class="card flex justify-content-center mt-4">
-      <p-card
-        [header]="resultado.name"
-        [subheader]="resultado.ratings[0].title"
-        [style]="{ width: '300px' }"
-      >
-        <ng-template pTemplate="header">
-          <img
-            alt="Card"
-            [src]="resultado.background_image"
-            (click)="imagenClick(resultado.name)"
-            style="cursor: pointer"
-          />
-        </ng-template>
-        <p>
-          Este juego, lanzado el {{ resultado.released }} cuenta con una
-          valoracion general de {{ resultado.rating }} despues de un total de
-          {{ resultado.ratings_count }} votos
-        </p>
-        <ng-template pTemplate="footer">
-          <h5 *ngIf="resultado.stores !== []">Disponible en:</h5>
-          <p *ngFor="let tienda of resultado.stores">
-            {{ tienda.store.name }}
-          </p>
-        </ng-template>
-      </p-card>
+    <div pDefer>
+      <ng-template>
+        <div
+          class="card flex justify-content-center mt-4 fadein animation-duration-1000"
+        >
+          <p-card
+            [header]="resultado.name"
+            [subheader]="resultado.ratings[0].title"
+            [style]="{ width: '300px' }"
+          >
+            <ng-template pTemplate="header">
+              <img
+                alt="Card"
+                [src]="resultado.background_image"
+                (click)="imagenClick(resultado.name)"
+                style="cursor: pointer"
+              />
+            </ng-template>
+            <p>
+              Este juego, lanzado el {{ resultado.released }} cuenta con una
+              valoracion general de {{ resultado.rating }} despues de un total
+              de {{ resultado.ratings_count }} votos
+            </p>
+            <ng-template pTemplate="footer">
+              <h5 *ngIf="resultado.stores !== []">Disponible en:</h5>
+              <p *ngFor="let tienda of resultado.stores">
+                {{ tienda.store.name }}
+              </p>
+            </ng-template>
+          </p-card>
+        </div>
+      </ng-template>
     </div>
   </div>
 </div>
